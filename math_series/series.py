@@ -50,3 +50,12 @@ def sum_series(n,num1=0,num2=1):
             return num2
         else:
             return sum_series(n-1,num1,num2)+sum_series(n-2,num1,num2)
+
+if __name__=="__main__":
+    print("fibonacci(3) = ",fibonacci(3))
+    print("fibonacci('num')",fibonacci("num"))
+    print("lucas(7) = ",lucas(7))
+    print("lucas(-11)",lucas(-11))
+    print("sum_series(2) = ",sum_series(2))
+    print("sum_series(4,2,1) = ",sum_series(4,2,1))
+    print("sum_series(3,3,3) = ",sum_series(3,3,3))
